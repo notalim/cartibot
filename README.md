@@ -5,12 +5,21 @@
 
 `!cartify <message`: the Bot transforms the text of the message similar to how Carti would tweet & text in the eras of *"Die Lit"* and pre-*"Whole Lotta Red"*.
 
-### What it eventually will do
+`!bars <number of lines>`: the Bot spits out random lines from one of his songs. The amount of lines is determined by the second parameter. I used my own *geniusthief* python script to scrape all lyrics into one textfile.
 
-> Most function names are TBD.
-
-`!bars <number of lines>`: the Bot spits out random lines from one of his songs. The amount of lines is determined by the second parameter.
 
 `!tweet`: the Bot spits out a random Carti tweet.
+
+### Fluff
+
+`!hello`: the Bot says hi. In it's own way.
+
+`!disaster`: the Bot reminds of a disaster. 
+
+### What it eventually will do (you can help me implement it!)
+
+`!insta`: the Bot outputs a random Cart Insta post.
+
+> Most function names are TBD.
 
 #### and probably more...maybe. 
