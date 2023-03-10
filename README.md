@@ -16,9 +16,11 @@
 
 `!disaster`: the Bot reminds of a disaster. 
 
-### What it eventually will do (you can help me implement it!)
+### TODO or what it eventually will do (you can help me implement it!)
 
 `!insta`: the Bot outputs a random Cart Insta post.
+
+* use Twitter API to get the Tweets instead of hardcoding them.
 
 > Most function names are TBD.
 
