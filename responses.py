@@ -9,11 +9,11 @@ def cartify(message):
     words = message.split()
     cartified_message = ""
     for word in words:
-         cartified_message += word
-         if random.randint(0, 1) < 1:  
+        cartified_message += word
+        cartified_message += " "
+        if random.randint(0, 1) < 1:  
             cartified_message += random.choice(CARTI_SLANG)
-            cartified_message += " "
-            if random.randint(0, 100) < 13:
+        if random.randint(0, 100) < 13:
                 cartified_message += random.choice(CARTI_EMOJIS)
                 cartified_message += " "
     return cartified_message
