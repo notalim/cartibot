@@ -2,3 +2,4 @@
 Dockerfile
 fly.toml
 ./lyrics/lyrics.txt
+bot.py

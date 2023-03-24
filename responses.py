@@ -44,9 +44,6 @@ def handle_bars(message):
     
 # test
 # print(handle_bars("!bars 2"))
-
-
-    
             
 def handle_response(message) -> str:
     p_message = message.lower()
@@ -66,9 +63,12 @@ def handle_response(message) -> str:
 
     elif cmd == "!tweet":
         return ">>> " + handle_tweet(message)
+    
+    elif cmd == "!peak":
+        return ">>> " + "PEAK HAS BEEN LEAKED ON MARCH 23, 2023:\n https://youtu.be/eXAVJcgwNSc"
 
     elif p_message == '!help':
-        return ">>> i only can do `!bars <amount of lines>` or `!cartify <message>` for now."
+        return ">>> I can do:\n`!bars <amount of lines>`,\n`!cartify <message>`,\n`!tweet`,\n`!disaster`,\n`!peak`,\n`!hello` for now.\n\nUse `?` for pm."
     
     else: 
         return
