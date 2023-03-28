@@ -58,7 +58,7 @@ def handle_response(message) -> str:
     cmd = p_message.split()[0]
 
     if cmd == "!hello":
-        return "*hey my slatt+!" + cartify("\ntoday is daily lyrics are ") + "*\n\n" + DAILY_LYRICS
+        return "*hey my slatt+!" + cartify("\ntoday's daily lyrics are ") + "*\n\n" + DAILY_LYRICS
     elif cmd == "!cartify":
         return cartify(p_message.split(' ', 1)[1])
     elif cmd == "!bars":
