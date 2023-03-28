@@ -1,5 +1,5 @@
 
 Dockerfile
 fly.toml
-./lyrics/lyrics.txt
+lyrics/lyrics.txt
 bot.py
