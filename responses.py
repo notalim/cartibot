@@ -24,16 +24,19 @@ def handle_bars(message):
     if len(args) > 2 or not args[1].isdigit():
         return "`bars` takes only one int argument!"
     amt = int(args[1])
-    if not (1 <= amt <= 8):
-        return "can spit out only 1-8 bars!"
+    if not (1 <= amt <= 16):
+        return "can spit out only 1-16 bars!"
 
     with open("lyrics/lyrics.txt", 'r') as fp:
         lines = fp.readlines()
         output = ""
         lineno = random.randint(0, len(lines) - amt)
         for _ in range(amt):
+            if len(lines[lineno].strip()) == 0:
+                return handle_bars(message)
             output += lines[lineno]
             lineno += 1
+        
         return "*" + output.strip()+ "*"
 
 def update_daily_lyrics():

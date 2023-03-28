@@ -1,6 +1,6 @@
 # Playbot Carti Discord Bot
 
-> version: 0.4.2
+> version: 0.4.3
 
  Discord bot based on the famous music artist Playboi Carti. It's a project for fun and passion for Carti's music.
 
