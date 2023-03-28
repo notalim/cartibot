@@ -2,9 +2,7 @@ import random
 import linecache
 import time
 from tweets import handle_tweet
-
-CARTI_SLANG = [":( 💕\n", "🍄", " lit **!++", "+:) love !", "*+!:) !!\n", "\nxo !", "* +", "\n +", "++**", " slatt", ".$", ".. ", "++*", "^\n", "++!", ":)", ":^/", "!", ":-)", "*", "!+", "++", "_"]
-CARTI_EMOJIS = ["🦋", "❤️", "🦇", "💕", "💔", "🖤", "🍄"]
+from carti_content import CARTI_EMOJIS, CARTI_QUOTES, CARTI_SLANG, CARTI_ADLIBS
 
 def cartify(message):
     words = message.split()
@@ -55,12 +53,20 @@ def daily_lyrics():
             output += lines[lineno]
             lineno += 1
         return "*" + output.strip() + "*"
+    
+def random_quote():
+    return "__" + random.choice(CARTI_QUOTES) + "__"
+
+def random_adlib():
+    return "*" + random.choice(CARTI_ADLIBS) + "*"
 
 def handle_response(message) -> str:
     p_message = message.lower()
     cmd = p_message.split()[0]
 
-    if cmd == "!hello":
+    if cmd == "!cartihelp":
+        return "I can do:\n`!bars <amount of lines>`,\n`!cartify <message>`,\n`!tweet`,\n`!disaster`,\n`!peak`,\n`!hello`, \n`!daily`,\n `!quote` for now.\n\nUse `?` for pm."
+    elif cmd == "!hello":
         return "*hey my slatt+!" + cartify("\ntoday's daily lyrics are ") + "*\n\n" + DAILY_LYRICS
     elif cmd == "!cartify":
         return cartify(p_message.split(' ', 1)[1])
@@ -72,9 +78,13 @@ def handle_response(message) -> str:
         return handle_tweet(message)
     elif cmd == "!peak":
         return "PEAK HAS BEEN LEAKED ON MARCH 23, 2023:\n https://youtu.be/eXAVJcgwNSc"
-    elif cmd == "!cartihelp":
-        return "I can do:\n`!bars <amount of lines>`,\n`!cartify <message>`,\n`!tweet`,\n`!disaster`,\n`!peak`,\n`!hello`, \n`!daily` for now.\n\nUse `?` for pm."
     elif cmd == "!daily":
         return DAILY_LYRICS
+    elif cmd == "!quote":
+        return random_quote()
+    elif cmd == "!mid":
+        return "No mid was found for Carti."
+    elif cmd == "!adlib":
+        return random_adlib()
     else:
         return

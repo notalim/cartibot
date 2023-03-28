@@ -1,6 +1,6 @@
 # Playbot Carti Discord Bot
 
-> version: 0.4.3
+> version: 0.5.1
 
  Discord bot based on the famous music artist Playboi Carti. It's a project for fun and passion for Carti's music.
 
@@ -29,11 +29,13 @@
 
 `!mid`: the Bot reminds that mid doesn't exist.
 
+`!quote`: the Bot gives a random Carti quote from an interview.
+
+`!adlib`: the Bot gives an adlib.
+
 ### TODO or what it eventually will do (you can help me implement it!)
 
 `!insta`: the Bot outputs a random Cart Insta post.
-
-`!quote`: the Bot will say something like.. "As I once said in <song_name>: ..." and give the bars from that song.
 
 * use Twitter API to get the Tweets instead of hardcoding them.
 
