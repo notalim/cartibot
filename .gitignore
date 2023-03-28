@@ -2,4 +2,4 @@
 Dockerfile
 fly.toml
 lyrics/lyrics.txt
-bot.py
+private_token.py

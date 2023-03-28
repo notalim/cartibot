@@ -1,6 +1,6 @@
 # Playbot Carti Discord Bot
 
-> version: 0.3.1
+> version: 0.4.2
 
  Discord bot based on the famous music artist Playboi Carti. It's a project for fun and passion for Carti's music.
 
@@ -11,21 +11,29 @@
 
 `!cartify <message`: the Bot transforms the text of the message similar to how Carti would tweet & text in the eras of *"Die Lit"* and pre-*"Whole Lotta Red"*.
 
-`!bars <number of lines>`: the Bot spits out random lines from one of his songs. The amount of lines is determined by the second parameter. I used my own *geniusthief* python script to scrape all lyrics into one textfile.
+`!bars <number of lines>`: the Bot spits out random lines from one of his songs. The amount of lines is determined by the second parameter. If no number of lines are give, bot gives 1-3 lines. I used my own *geniusthief* python script to scrape all lyrics into one textfile. 
 
 `!tweet`: the Bot spits out a random Carti tweet.
 
+`!hello`: the Bot says hi and gives today's daily lyrics. In it's own way.
+
+`!daily`: the Bot says today's daily lyrics.
+
 ### Fluff
 
-`!hello`: the Bot says hi. In it's own way.
+`!cartihelp`: ask Bot for the command list.
 
 `!disaster`: the Bot reminds of a disaster. 
 
 `!peak`: the Bot reminds of peak. 
 
+`!mid`: the Bot reminds that mid doesn't exist.
+
 ### TODO or what it eventually will do (you can help me implement it!)
 
 `!insta`: the Bot outputs a random Cart Insta post.
+
+`!quote`: the Bot will say something like.. "As I once said in <song_name>: ..." and give the bars from that song.
 
 * use Twitter API to get the Tweets instead of hardcoding them.
 
